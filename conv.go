@@ -11,7 +11,7 @@ func CToK(c Celsius) Kelvin {
 }
 
 func KToC(k Kelvin) Celsius {
-	return Celsius(k - AbsoluteZeroC) // это преобразование типа Kelvin в Celsius
+	return Celsius(k - Kelvin(AbsoluteZeroC)) // это преобразование типа Kelvin в Celsius
 }
 
 func FToC(f Fahrenheit) Celsius {
