@@ -14,6 +14,10 @@ func KToC(k Kelvin) Celsius {
 	return Celsius(k - Kelvin(AbsoluteZeroC)) // это преобразование типа Kelvin в Celsius
 }
 
+func KToF(k Kelvin) Fahrenheit {
+	return Fahrenheit(k - Kelvin(AbsoluteZeroC)) // это преобразование типа Kelvin в Fahrenheit
+}
+
 func FToC(f Fahrenheit) Celsius {
 	return Celsius((f - 32) * 5 / 9) // это преобразование типа Fahrenheit в Celsius
 }
